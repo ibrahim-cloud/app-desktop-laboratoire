@@ -1,7 +1,10 @@
 const { app, BrowserWindow } = require("electron");
 const path = require("path");
-// const fs = require("fs");
+ const fs = require("fs");
 const fetch = require('node-fetch');
+
+// const logger = require('./logger.js');
+
 
 if (require("electron-squirrel-startup")) {
  
@@ -25,12 +28,19 @@ if (require("electron-squirrel-startup")) {
     mainWindow.on('closed', () => {
       
     })
+  
   };
+  
+ 
+//   fetch('https://api.covid19api.com/summary')
+//     .then(res => res.json())
+//     .then(json => console.log(json));
 
 
-  fetch('https://api.covid19api.com/summary')
-    .then(res => res.json())
-    .then(json => console.log(json));
-   
+// span.innerHTML = `${author.Global.NewConfirmed} ${author.Global.TotalConfirmed}`;
 
-  app.whenReady().then(createWindow);
+ app.whenReady().then(createWindow);
+  
+  
+
+  

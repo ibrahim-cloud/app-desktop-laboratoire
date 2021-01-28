@@ -1,0 +1,21 @@
+{
+  "name": "mock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scriptList.js",
+  "dependencies": {
+    "ajax": "0.0.4",
+    "bootstrap": "^4.6.0",
+    "dotenv": "^8.2.0",
+    "jquery": "^3.5.1",
+    "node": "^15.4.0",
+    "regex": "^0.1.1",
+    "sweetalert2": "^10.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "ibrahim hajiri",
+  "license": "ISC"
+}
